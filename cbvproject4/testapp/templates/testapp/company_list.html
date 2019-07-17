@@ -1,0 +1,7 @@
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<h1>LIST OF ALL COMPANYES</h1>
+{%for company in company_list%}
+<h2><a href="/{{company.id}}">{{company.name}}</a></h2>
+{%endfor%}
+{%endblock%}
